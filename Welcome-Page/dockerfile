@@ -1,0 +1,9 @@
+# Use nginx base image
+FROM nginx:alpine
+
+# Copy welcome page HTML to nginx public folder
+COPY . /usr/share/nginx/html
+
+# Expose port
+EXPOSE 80
+

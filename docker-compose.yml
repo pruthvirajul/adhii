@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  employee_formfilling:
+    build: ./Employee_Formfilling
+    ports:
+      - "3001:80"
+    restart: always
+
+  hr_formfilling:
+    build: ./HR_FormFilling
+    ports:
+      - "3002:80"
+    restart: always
+
+  welcome_page:
+    build: ./Welcome-Page
+    ports:
+      - "3003:80"
+    restart: always
+
